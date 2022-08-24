@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-24T12:05:32.345Z",
+    "end": "2022-08-24T12:05:54.490Z",
+    "duration": 22145,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "51e1fc76-d7bb-4307-a063-f7349b617eeb",
+      "title": "",
+      "fullFile": "cypress/integration/LoginTest.js",
+      "file": "cypress/integration/LoginTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b077088-6f74-4873-9cfd-9c3f0f88f30e",
+          "title": "Login Test Validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify valid credentials",
+              "fullTitle": "Login Test Validation Verify valid credentials",
+              "timedOut": null,
+              "duration": 8951,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Screenshot\",\n        \"value\": \"\\\\LoginTest.js\\\\1.png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.login(\"admin@yourstore.com\", \"admin\");\ncy.title().should(\"be.equal\", \"Dashboard / nopCommerce administration\");\ncy.screenshot(\"1\");",
+              "err": {},
+              "uuid": "6df0560e-f837-44ea-810d-3e481d7e07d4",
+              "parentUUID": "5b077088-6f74-4873-9cfd-9c3f0f88f30e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test invalid credentials for login",
+              "fullTitle": "Login Test Validation Test invalid credentials for login",
+              "timedOut": null,
+              "duration": 3510,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Screenshot\",\n        \"value\": \"\\\\LoginTest.js\\\\2.png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.login(\"admin@yourstore.com\", \"admin123\");\nloginpage.invalidMessage().should(\"have.text\", \"Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect\\n\");\ncy.title(\"Your store. Login\");\ncy.screenshot(\"2\");",
+              "err": {},
+              "uuid": "540c3caf-9f37-476e-a1b8-52f73a0f493a",
+              "parentUUID": "5b077088-6f74-4873-9cfd-9c3f0f88f30e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate error message for invalid username",
+              "fullTitle": "Login Test Validation Validate error message for invalid username",
+              "timedOut": null,
+              "duration": 3094,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Screenshot\",\n        \"value\": \"\\\\LoginTest.js\\\\3.png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.login(\"admin123@yourstore.com\", \"admin\");\nloginpage.invalidMessage().should(\"have.text\", \"Login was unsuccessful. Please correct the errors and try again.No customer account found\\n\");\ncy.title(\"Your store. Login\");\ncy.screenshot(\"3\");",
+              "err": {},
+              "uuid": "ec0c2e9d-cbc4-4a5d-959f-4ce0f78fd9f9",
+              "parentUUID": "5b077088-6f74-4873-9cfd-9c3f0f88f30e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate error message for the invalid password",
+              "fullTitle": "Login Test Validation Validate error message for the invalid password",
+              "timedOut": null,
+              "duration": 3496,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Screenshot\",\n        \"value\": \"\\\\LoginTest.js\\\\4.png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.login(\"admin123@yourstore.com\", \"admin123\");\nloginpage.invalidMessage().should(\"have.text\", \"Login was unsuccessful. Please correct the errors and try again.No customer account found\\n\");\ncy.title(\"Your store. Login\");\ncy.screenshot(\"4\");",
+              "err": {},
+              "uuid": "94132307-7cea-4d52-a995-0da90b3a24fe",
+              "parentUUID": "5b077088-6f74-4873-9cfd-9c3f0f88f30e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6df0560e-f837-44ea-810d-3e481d7e07d4",
+            "540c3caf-9f37-476e-a1b8-52f73a0f493a",
+            "ec0c2e9d-cbc4-4a5d-959f-4ce0f78fd9f9",
+            "94132307-7cea-4d52-a995-0da90b3a24fe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19051,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

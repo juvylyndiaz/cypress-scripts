@@ -1,0 +1,23 @@
+{
+
+    "includeShadowDom": true,
+    "pageLoadTimeout": 60000,
+    "ExperimentalShadowDomSupport": true,
+    "defaultCommandTimeout": 50000,
+    "requestTimeout": 50000,
+    "chromeWebSecurity": false,
+    "experimentalFetchPolyFill": true,
+    "failOnStatusCode": false,
+    "modifyObstructiveCode": false,
+    "screenshotsFolder": "cypress/reports/screenshots",
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+       "reportDir": "cypress/reports",
+       "overwrite": false,
+       "html": true,
+       "json": false,
+       "charts": true,
+       "timestamp": "mmddyyyy_HHMMss"
+    }
+
+}

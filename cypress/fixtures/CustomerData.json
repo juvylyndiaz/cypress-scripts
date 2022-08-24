@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "Email": "juvy1232@gmail.com",
+      "Password": "juvylyn123",
+      "firstname": "Juvy",
+      "lastname": "Dias",
+      "Gender": "Female",
+      "BirthDate": 34891,
+      "companyname": "Asows",
+      "isTaxExempt": "Yes",
+      "NewsLetter": "Test store 2",
+      "CustomerRole": "Vendors",
+      "ManagerVendor": "Vendor 1",
+      "AdminComment": "Automation Demo"
+    },
+    {
+      "Email": "juvy2232@gmail.com",
+      "Password": "juvylyn223",
+      "firstname": "Juvy",
+      "lastname": "Dias",
+      "Gender": "Male",
+      "BirthDate": 34891,
+      "companyname": "Asows",
+      "isTaxExempt": "No",
+      "NewsLetter": "Your store name",
+      "CustomerRole": "Guests",
+      "ManagerVendor": "Not a vendor",
+      "AdminComment": "Automation Demo"
+    }
+  ]
+}

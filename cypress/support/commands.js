@@ -36,3 +36,7 @@ Cypress.Commands.add("login", (email, password)=>{
     loginpage.submitBtn().click();
     
 })
+
+Cypress.Commands.add("parseXlsx", (inputFile) => {
+    return cy.task('parseXlsx', { filePath: inputFile })
+    });

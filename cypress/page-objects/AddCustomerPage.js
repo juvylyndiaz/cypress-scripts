@@ -21,7 +21,11 @@ class AddCustomerPage{
      }
 
      genderFemale(){
-        return cy.get('input[name="Gender_Female"]');
+        return cy.get('input[id="Gender_Female"]');
+     }
+
+     birthDate(){
+        return cy.get('input[id="DateOfBirth"]');
      }
 
      companyName(){
@@ -33,11 +37,11 @@ class AddCustomerPage{
      }
 
      newsLetter(){
-        return cy.get('select[id="SelectedNewsletterSubscriptionStoreIds"]').prev
+        return cy.get('select[id="SelectedNewsletterSubscriptionStoreIds"]').prev()
      }
 
      customerRoles(){
-        return cy.get('select[id="SelectedCustomerRoleIds"]').prev
+        return cy.get('select[id="SelectedCustomerRoleIds"]').prev()
      }
 
      managerVendor(){
@@ -45,17 +49,8 @@ class AddCustomerPage{
      }
 
      adminComment(){
-        return cy.get('input[id="AdminComment"]');
+        return cy.get('textarea[id="AdminComment"]');
      }
 
 }
 export default AddCustomerPage
-
-
-
-
-
-
-
-
-
